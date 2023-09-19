@@ -1,8 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
+
 <?php
-include './head.php';
+$metatag = '<meta name="description" content="Get GLOBALGAP certified and improve your food safety, sustainability, and quality assurance. We offer a simple and straightforward certification process to help you achieve your goals.">';
+$pageTitle = "GLOBALG.A.P Certification | React Cert Africa Beyond Certification"; // Set the title for this page
+include('head.php'); // Include the common head section
 ?>
 
 <body>
@@ -31,10 +34,10 @@ include './head.php';
 
                             <div class="section-tittle m-0">
                                 <h2>GLOBALGAP Certification</h2>
-                                <p>Rise above the competition with React Cert Africa Ltd. We empower your business to attain GLOBALG.A.P Certification, a symbol of excellence and global standards compliance. <br><br>
-                                We're in 5+ countries and 25+ industries, promoting fair workplaces and driving your success. Raise the bar with us <br><br>
-                                Ready to start your certification journey? Contact us at info@reactcertafrica.com for a personalized offer. Thrive globally with GLOBALG.A.P Certification by React Cert Africa Ltd. Your excellence, our commitment.</p>
-                                <a href="#" class="browse-btn mt-20">Visit our How to Join RCA page</a>
+                                <p>Rise above the competition with React Cert Africa Ltd. We are dedicated and committed to service excellence while maintaining high professional standards. <br><br>
+                                We're in 5+ countries and 10+ sectors, promoting fair and ethical workplaces, consumer protection and ease of cross border trade through independent certification. Raise the bar with us. <br><br>
+                                Ready to start your certification journey? Contact us at admin@reactcertafrica.com for a personalized offer. Thrive globally with GLOBALG.A.P Certification by React Cert Africa Ltd. Your excellence, our commitment.</p>
+                                <a href="how-to-join-rca" class="browse-btn mt-20">Visit our How to Join RCA page</a>
                             </div>
                         </div>
                 </div>
@@ -48,11 +51,11 @@ include './head.php';
                     <div class="col-xl-12 col-lg-12 col-md-12">
 
                         <div class="section-tittle-ts text-left mb-40">
-                            <h2>Your business benefits from being GLOBALG.A.P Certified</h2>
-                            <p><i class="fa fa-adjust" aria-hidden="true"></i> Elevate your certification with GLOBALG.A.P.'s robust traceability system. Ensure transparency, quality, and trust in your products throughout the global supply chain. Join us for a certification that empowers you with excellence. <br><br>
-                            <i class="fa fa-adjust" aria-hidden="true"></i> Discover top-quality, locally-sourced products that adhere to strict food safety and hygiene standards. Elevate your certification journey with our trusted service. <br><br>
-                            <i class="fa fa-adjust" aria-hidden="true"></i> Unlock local and regional markets with our certification service. Expand your reach, establish trust, and seize new opportunities today. <br><br>
-                            <i class="fa fa-adjust" aria-hidden="true"></i> Elevate your food business with our certification service. Ensure full compliance with food safety regulations effortlessly, and gain peace of mind knowing your operations meet all legal requirements. Trust us for a safer, more compliant future.</p>
+                            <h2>Your business benefits from being Certified</h2>
+                            <p><i class="fa fa-adjust" aria-hidden="true"></i><strong> Independent Evaluation:</strong> Businesses, regardless of their size, can benefit from independent evaluations provided by React Ceart Africa Ltd. These evaluations include but not limited to product testing, equipment inspection, and certification of quality management systems, Food Safety Management Systems, Environmental Management Systems, KS 1758 Horticulture Industry Code of Practice, Integrated Farm Assurance Plants Scope with GRASP Spring add ons, and Chain of Custody Standards. helping businesses assess and improve their processes and products. <br><br>
+                            <i class="fa fa-adjust" aria-hidden="true"></i> <strong>Risk Reduction:</strong> Certification helps reduce the risk of product failure and ensures that products and services meet required quality and safety standards. This can lead to increased customer satisfaction and trust. <br><br>
+                            <i class="fa fa-adjust" aria-hidden="true"></i> <strong>Market Access:</strong> Accreditation enhances a company's credibility and competitiveness in the global market. Certificates issued by React Ceart Africa Ltd a globally accredited institution are more likely to be accepted by international partners and customers, facilitating international trade. <br><br>
+                            <i class="fa fa-adjust" aria-hidden="true"></i> <strong>Compliance:</strong> Accreditation ensures that businesses adhere to industry-specific regulations and standards, helping them avoid legal issues related to health and safety, environmental protection, and other regulatory requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -60,7 +63,7 @@ include './head.php';
                     <div class="col-lg-6 col-md-6">
                         <div class="single-blogs mb-30">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog2.jpg" alt>
+                                <img src="assets/img/gallery/Product Certification.png" alt>
                             </div>
                             <div class="blog-caption">
                                 <h3><a href="#">Product Certification</a></h3>
@@ -72,7 +75,7 @@ include './head.php';
                     <div class="col-lg-6 col-md-6">
                         <div class="single-blogs">
                             <div class="blog-img">
-                                <img src="assets/img/gallery/blog1.jpg" alt>
+                                <img src="assets/img/gallery/Training.png" alt>
                             </div>
                             <div class="blog-caption">
                                 <h3><a href="#">Trainings</a></h3>

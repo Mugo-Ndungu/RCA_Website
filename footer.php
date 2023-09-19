@@ -8,7 +8,7 @@
                             <div class="single-footer-caption mb-20">
 
                                 <div class="footer-logo mb-35">
-                                    <a href="index.php"><img src="assets/img/logo/logo_2.png" width="200px" height="140px" alt></a>
+                                    <a href="index.php"><img src="assets/img/logo/React Cert Africa Ltd Footer.png" width="200px" height="200px" alt></a>
                                 </div>
                             </div>
                         </div>
@@ -18,10 +18,10 @@
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="#">Work</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Tips & Tricks</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">News / Blog</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -31,9 +31,9 @@
                             <div class="footer-tittle">
                                 <h4>Programs</h4>
                                 <ul>
-                                    <li><a href="#">Air freight</a></li>
-                                    <li><a href="#">Ocean freight</a></li>
-                                    <li><a href="#">Large projects</a></li>
+                                    <li><a href="#">Independent third-party Certification Services</a></li>
+                                    <li><a href="#">Training Services</a></li>
+                                    <li><a href="#">Coming soon: Laboratory Testing Services</a></li>
                                 </ul>
                             </div>
                         </div>

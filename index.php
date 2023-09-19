@@ -2,8 +2,108 @@
 <html class="no-js" lang="zxx">
 
 <?php
-include './header.php';
+$metatag = '<meta name="description" content="Get GLOBALGAP certified and improve your food safety, sustainability, and quality assurance. We offer a comprehensive range of services to help you comply with GLOBALGAP standards and gain access to new markets.">';
+$pageTitle = "RCA | React Cert Africa Beyond Certification - reactcertafrica.com"; // Set the title for this page
+include('head.php'); // Include the common head section
 ?>
+
+<style>
+    /*slider-bg-setup*/
+    .slider-items {
+        position: relative;
+        /*   slider-height */
+        height: 100vh;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+    }
+
+    /* you can use background imgae in internal css */
+    .bg-img-1 {
+        background-image: url(./assets/img/gallery/Client\ request\ service.png);
+    }
+
+    .bg-img-2 {
+        background-image: url(./assets/img/gallery/Client\ request\ service.png);
+    }
+    /*slider-style*/
+    .active-slider {
+        position: relative;
+    }
+
+    .sigle-item {
+        position: absolute;
+        color: #fff;
+        text-align: top;
+        width: 100%;
+        top: 50%;
+        text-transform: uppercase;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    /*over-lay-for-slider*/
+    .slider-items:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* overlay-color */
+        background: -webkit-gradient(linear, left top, left bottom, from(#777), to(#000));
+        background: -webkit-linear-gradient(#777, #000);
+        background: -o-linear-gradient(#777, #000);
+        background: linear-gradient(#777, #000);
+        opacity: .0
+    }
+
+    /*slider-reade-more-button*/
+    a.home-btn {
+        border: 2px solid #fff;
+        display: inline-block;
+        padding: 10px 25px;
+        margin-top: 30px;
+        color: #fff;
+        text-decoration: none;
+        transition: linear .3s;
+    }
+
+    a.home-btn:hover,
+    .owl-nav div:hover {
+        background-color: #000;
+    }
+
+    /*owl-nav*/
+    .owl-nav div {
+        border: 2px solid #fff;
+        color: #fff;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        z-index: 9;
+        top: 50%;
+        margin-top: -20px;
+        left: 10px;
+        line-height: 40px;
+        text-align: center;
+        -webkit-transition: linear .3s;
+        -o-transition: linear .3s;
+        transition: linear .3s;
+    }
+
+    .owl-nav div.owl-next {
+        left: auto;
+        right: 10px;
+    }
+
+    /* optional */
+    .owl-nav h1 {
+        font-weight: 900;
+    }
+</style>
 
 <body>
     <main></main>
@@ -38,14 +138,8 @@ include './header.php';
 
         <div class="tailor-details">
             <div class="section-tittle mb-40">
-                <h2>RCA is on a mission to assure fairness</h2>
-                <p>Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula.<br> Integer efficitur
-                    tellus metus, sed feugiat leo posuere. <br><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur
-                    tellus metus, sed feugiat leo posuere. <br><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur
-                    tellus metus, sed feugiat leo posuere. <br><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur
-                    tellus metus, sed feugiat leo posuere. <br><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur
-                    tellus metus, sed feugiat leo posuere. <br><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur
-                    tellus metus, sed feugiat leo posuere.</p>
+                <h2>RCA is on a mission to promote africa led solutions</h2>
+                <p style="width: 70%;"> <strong><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Empowering African Women and Youth:</strong> RCA, driven by African women and youth, championing homegrown solutions in global trade, fostering growth. <br> <br> <strong><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Global Experience, Local Experts: </strong>  With global experience, our team contextualizes local expertise to ensure efficient, cost-effective, and professional services. <br><br> <strong><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Efficiency in Turnaround Time: </strong> Dedicated timelines to service delivery with the flexibility in curating solutions that meet clients goals. <br> <br> <strong><i class="fa fa-dot-circle-o" aria-hidden="true"></i> International Accreditation: </strong> As an internationally accredited institution, we stand at the forefront of quality assurance in Africa.</p>
             </div>
 
             <!-- <div class="single-gallery mb-15">
@@ -95,128 +189,50 @@ include './header.php';
     <section class="about-area section-bg section-padding">
         <div class="container">
             <div class="row align-items-center">
-                <h2>Check us out in action during an audit!</h2>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
-
-                    <!-- <div class="about-img about-img1  ">
-                            <img src="assets/img/gallery/about1.jpg" alt>
-                        </div> -->
-                    <div class="about-img about-img1  ">
-                        <div id="player"></div>
-                        <!-- <iframe data-gtm-yt-inspected-12="true" loading="lazy"
-                                title="Trader Audit by RCA at TeeGschwendner" width="500" height="281"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                frameborder="0" allowfullscreen src="https://youtu.be/pLa9vNyQfvI">
-                            </iframe> -->
-                    </div>
-                </div>
-                <div class="offset-xl-1 offset-lg-0 offset-sm-1 col-xxl-5 col-xl-5 col-lg-6 col-md-9 col-sm-11">
+                <!-- <h2>Check us out in action during an audit!</h2> -->
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
                     <div class="about-caption about-caption1">
-
                         <div class="section-tittle m-0">
                             <h2>Want to learn more about the audit process?</h2>
-                            <a href="#" class="browse-btn mt-20">Visit our How to Join RCA page</a>
                         </div>
                     </div>
+                    <section class="hearo-area">
+                        <!-- slider-area -->
+                        <div class="slider-wrapper">
+                            <div class="active-slider owl-carousel">
+                                <div class="slider-items bg-img-1">
+                                    <!-- <div class="sigle-item">
+                                        <h1>Unconditional Certification</h1>
+                                    </div> -->
+                                </div>
+                                <div class="slider-items bg-img-2">
+                                    <!-- <div class="sigle-item">
+                                        <h1>Conditional Certification</h1>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider-area-ends -->
+                    </section>
+                    <!-- <div class="about-img about-img1  ">
+                        <img src="assets/img/gallery/Share Application.png" alt>
+                    </div> -->
+
                 </div>
+                <!-- <div class="offset-xl-1 offset-lg-0 offset-sm-1 col-xxl-5 col-xl-5 col-lg-6 col-md-9 col-sm-11">
+                    <div class="about-caption about-caption1">
+                        <div class="section-tittle m-0">
+                            <h2>Want to learn more about the audit process?</h2>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </section>
-
-
-    <section class="home-blog section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12 col-lg-12 col-md-12">
-
-                    <div class="section-tittle text-center mb-40">
-                        <h2>Our Services</h2>
-                        <p><strong class="color-danger">React Ceart Africa</strong> is committed to delivering exceptional solutions tailored to your needs. With a dedicated team of experts, cutting-edge technology, and a passion for exceeding expectations, we take pride in offering a range of services designed to propel your success. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-blogs mb-30">
-                        <div class="blog-img">
-                            <img src="assets/img/gallery/blog2.jpg" alt>
-                        </div>
-                        <div class="blog-caption">
-                            <h3><a href="#">Product Certification</a></h3>
-                            <p>Unlock market potential with our Product Certification service. Ensure your products meet industry standards, gain trust, and expand your reach. Trust our expertise to navigate the certification process efficiently, saving you time and resources. Elevate your products today.</p>
-                            <a href="#" class="browse-btn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-blogs">
-                        <div class="blog-img">
-                            <img src="assets/img/gallery/blog1.jpg" alt>
-                        </div>
-                        <div class="blog-caption">
-                            <h3><a href="#">Trainings</a></h3>
-                            <p>Elevate your team's expertise with our Auditor Training service. Empower your professionals with industry-leading knowledge and skills. Our comprehensive programs ensure compliance, efficiency, and excellence in auditing practices. Start your journey to becoming a certified auditor today.</p>
-                            <a href="#" class="browse-btn">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="class-offer-area section-padding border-bottom">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-12">
-
-                    <div class="section-tittle  d-flex justify-content-between align-items-center">
-                        <h2>News</h2>
-                        <!-- <a href="#" class="browse-btn mb-20">More Stories</a> -->RCA
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties pb-30">
-                        <div class="properties__card">
-                            <div class="properties__img">
-                                <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
-                            </div>
-                            <div class="properties__caption text-center">
-                                <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                        crucial to our histories</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties pb-30">
-                        <div class="properties__card">
-                            <div class="properties__img">
-                                <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
-                            </div>
-                            <div class="properties__caption text-center">
-                                <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                        crucial to our histories</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties pb-30">
-                        <div class="properties__card">
-                            <div class="properties__img">
-                                <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
-                            </div>
-                            <div class="properties__caption text-center">
-                                <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                        crucial to our histories</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php
+    include 'services.php';
+    include 'news.php';
+    ?>
 
 
     <!-- <section class="brand-area section-padding">
@@ -288,17 +304,21 @@ include './header.php';
         <a title="Go to Top" href="#"><i class="fa fa-arrow-up"></i></a>
     </div>
     <script>
-        const videoUrl = 'https://www.youtube.com/watch?v=pLa9vNyQfvI';
-
-        // Get the video content via the proxy server
-        fetch(`http://localhost:3000/proxy?videoUrl=${encodeURIComponent(videoUrl)}`)
-            .then(response => response.text())
-            .then(videoContent => {
-                // Inject the video content into an iframe on your webpage
-                const playerContainer = document.getElementById('player');
-                playerContainer.innerHTML = '<iframe width="500" height="281" srcdoc="${videoContent}" frameborder="0" allowfullscreen></iframe>';
-            })
-            .catch(error => console.error(error));
+        (function($) {
+            'use strict';
+            $(document).ready(function() {
+                $('.active-slider').owlCarousel({
+                    items: 1,
+                    loop: true,
+                    nav: false,
+                    //animation
+                    animateOut: 'fadeOut',
+                    autoplay: true,
+                    //icon for nav
+                    // navText: ['<h1> < </h1>', '<h1> > </h1>']
+                });
+            });
+        })(jQuery);
     </script>
 
     <?php

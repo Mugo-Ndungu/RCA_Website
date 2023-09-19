@@ -1,25 +1,12 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Who We Are | React Cert Africa</title>
-    <meta name="description" content>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
+<?php
+$metatag = '<meta name="description" content="React Ceart Africa Ltd (RCA) is a leading provider of GLOBALGAP certification services. We help businesses of all sizes improve their food safety, sustainability, and quality assurance practices. Our team of experts is dedicated to helping our clients achieve their goals and meet the demands of the global marketplace.">';
+$pageTitle = "Who we are | React Cert Africa Beyond Certification"; // Set the title for this page
+include('head.php'); // Include the common head section
+?>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
 
 <body>
     <?php
@@ -30,11 +17,10 @@
             <div class="slider-height2 slider-bg2 hero-overly d-flex align-items-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
+                        <div class="col-xxl-7 col-xl-9 col-lg-10 col-md-12">
                             <div class="hero-caption hero-caption2">
                                 <h2>About Us</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Suspendisse varius enim in eros elementum tristique.</p>
+                                <p>With a strategic presence in Kenya, Tanzania, Uganda, and Rwanda, React Cert Africa has successfully served clients across these nations. </p>
                             </div>
                         </div>
                     </div>
@@ -44,24 +30,25 @@
         <section class="about-area section-bg section-padding">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
+                    <!-- <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12">
 
                         <div class="about-img about-img1  ">
                             <img src="assets/img/gallery/team.jpg" alt>
                         </div>
-                    </div>
-                    <div class="offset-xl-1 offset-lg-0 offset-sm-1 col-xxl-5 col-xl-5 col-lg-6 col-md-9 col-sm-11">
+                    </div> -->
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="about-caption about-caption1">
 
                             <div class="section-tittle m-0">
                                 <h2>Who we are</h2>
-                                <p class="mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis
-                                    felis, vulputate sit amet mauris et, semper aliquam ligula. Integer efficitur tellus
-                                    metus, sed feugiat leo posuere ac. Morbi vitae tincidunt malesuada massa.</p>
-                                <p>Maecenas felis felis, vulputate sit amet mauris et, semper aliquam ligula. Integer
-                                    efficitur tellus metus, sed feugiat leo posuere ac. Morbi vitae tincidunt mi, et
-                                    malesuada massa.</p>
-                                <a href="#" class="browse-btn mt-20">Learn More</a>
+                                <p class="mb-30">Our vision is to extend our footprint further by enlisting dedicated country representatives who will help us expand our reach and serve even more clients in these regions. We will relaunch our presence in Ethiopia, as a show of our commitment to the country, through a country office based on Addis Ababa in March 2024.
+                                    <br><br>
+                                    At React Cert Africa, our certification services are offered on three year certification cycles or based on individual schemes, with surveillance audits annually. Once onboarded, we work with our clients through advance planning to ensure cycles are maintained.
+                                    <br><br>
+                                    Our objective is to grow our client base across Eastern Africa to over 1,000 while expanding schemes and sectors. This goal is underpinned by our aggressive expansion strategy, positioning React Cert Africa an industry leader in certification services.
+                                    <br><br>
+                                    Join us on our journey towards unparalleled growth and excellence. Partner with React Cert Africa, where professionalism, authority, and unwavering dedication converge to redefine the future of certification services.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -82,7 +69,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" src="assets/img/gallery/Lisa-removebg-preview.png" alt="Thumb">
+                                <img class="img-fluid" src="assets/img/gallery/woman user image.png" alt="Thumb">
                                 <div class="overlay">
                                     <h4>Admin</h4>
                                     <p>
@@ -95,7 +82,7 @@
                                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
                                             </li>
                                             <li class="instagram">
                                                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -116,7 +103,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" src="assets/img/gallery/Patience_-removebg-preview.png" alt="Thumb">
+                                <img class="img-fluid" src="assets/img/gallery/woman user image.png" alt="Thumb">
                                 <div class="overlay">
                                     <h4>Patience Njeri</h4>
                                     <p>
@@ -129,7 +116,7 @@
                                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
                                             </li>
                                             <li class="instagram">
                                                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -150,7 +137,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" src="assets/img/gallery/Alex-removebg-preview.png" alt="Thumb">
+                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
                                 <div class="overlay">
                                     <h4>Alex Mugo</h4>
                                     <p>
@@ -163,7 +150,7 @@
                                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
                                             </li>
                                             <li class="instagram">
                                                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -186,7 +173,7 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" width="315px" height="110px" src="assets/img/gallery/Wanjiku-removebg-preview.png" alt="Thumb">
+                                <img class="img-fluid" width="315px" height="110px" src="assets/img/gallery/woman user image.png" alt="Thumb">
                                 <div class="overlay">
                                     <h4>Tabitha Wanjiku</h4>
                                     <p>
@@ -199,7 +186,7 @@
                                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
                                             </li>
                                             <li class="instagram">
                                                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -220,12 +207,11 @@
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" width="315px" height="110px" src="assets/img/gallery/Owen-removebg-preview.png" alt="Thumb">
+                                <img class="img-fluid" width="315px" height="110px" src="assets/img/gallery/man user image.png" alt="Thumb">
                                 <div class="overlay">
-                                    <h4>Owen Wainaina</h4>
+                                    <h4>Boniface Eepa</h4>
                                     <p>
-                                        Experienced civil engineer shaping the world through innovative infrastructure
-                                        solutions. Turning blueprints into reality, one project at a time.
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -233,7 +219,7 @@
                                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
                                             </li>
                                             <li class="instagram">
                                                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -246,20 +232,19 @@
                                 <span class="message">
                                     <a href="#"><i class="fa fa-envelope-open"></i></a>
                                 </span>
-                                <h4>Owen Wainaina</h4>
-                                <span>Technical Engineer</span>
+                                <h4>Boniface Eepa</h4>
+                                <span>Auditor</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" src="assets/img/gallery/Irungu-removebg-preview.png" alt="Thumb">
+                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
                                 <div class="overlay">
-                                    <h4>Stanley Irungu</h4>
+                                    <h4>Caleb Kiptoo</h4>
                                     <p>
-                                        Passionate organic agronomist committed to sustainable farming. Nurturing
-                                        nature's bounty while preserving the environment.
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -267,7 +252,7 @@
                                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                             </li>
                                             <li class="pinterest">
-                                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
                                             </li>
                                             <li class="instagram">
                                                 <a href="#"><i class="fa fa-instagram"></i></a>
@@ -280,68 +265,216 @@
                                 <span class="message">
                                     <a href="#"><i class="fa fa-envelope-open"></i></a>
                                 </span>
-                                <h4>Stanley irungu</h4>
-                                <span>Agronomist</span>
+                                <h4>Caleb Kiptoo</h4>
+                                <span>Auditor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="assets/img/gallery/woman user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Diana Moraa</h4>
+                                    <p>
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Diana Moraa</h4>
+                                <span>Auditor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Ian Duncan Orenge</h4>
+                                    <p>
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Ian Duncan Orenge</h4>
+                                <span>Auditor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="assets/img/gallery/woman user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Joy Ounda</h4>
+                                    <p>
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Joy Ounda</h4>
+                                <span>Auditor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="assets/img/gallery/woman user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Ruth Muthoni</h4>
+                                    <p>
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Ruth Muthoni</h4>
+                                <span>Auditor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Reul Wanjohi Munyu</h4>
+                                    <p>
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Reul Wanjohi Munyu</h4>
+                                <span>Auditor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Wilson Mungoo</h4>
+                                    <p>
+                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Wilson Mungoo</h4>
+                                <span>Auditor</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="class-offer-area section-padding border-bottom">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-12">
 
-                        <div class="section-tittle  d-flex justify-content-between align-items-center">
-                            <h2>Top Stories</h2>
-                            <a href="#" class="browse-btn mb-20">More Stories</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                            crucial to our histories</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                            crucial to our histories</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="properties pb-30">
-                            <div class="properties__card">
-                                <div class="properties__img">
-                                    <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
-                                </div>
-                                <div class="properties__caption text-center">
-                                    <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                            crucial to our histories</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <?php
+        include './news.php';
+        ?>
 
 
         <section class="brand-area section-padding">
@@ -360,13 +493,12 @@
                 <div class="row justify-content-center align-items-end">
                     <div class="col-xl-8 col-lg-9">
                         <div class="brand-active text-center">
-                            <section class="customer-logos slider">
-                                <div class="slide"><img src="assets/img/gallery/Wagenigen University.png">
-                                </div>
-                                <div class="slide">
-                                    <img src="assets/img/gallery/IDH_Brandmark_Primary_Positive_RGB.png">
-                                </div>
-                            </section>
+                            <div class="slide ml-10 d-flex align-items-center justify-content-center">
+                                <img style="width: 100%;" src="assets/img/gallery/sanas-logo.svg">
+                            </div>
+                            <div class="slide ml-10 d-flex align-items-center justify-content-center">
+                                <img style="width: 100%;" src="assets/img/gallery/globalgap.svg">
+                            </div>
                         </div>
                     </div>
                 </div>

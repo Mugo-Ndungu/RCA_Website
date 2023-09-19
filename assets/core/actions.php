@@ -23,3 +23,11 @@ if (isset($_POST['formDataInfo'])) {
     mysqli_close($conn);
     
 }
+
+if (isset($_POST['userAllegationData'])){
+    
+}
+
+if(isset($_POST['resumeData'])){
+    
+}

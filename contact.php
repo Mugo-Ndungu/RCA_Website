@@ -1,25 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Contact Us | React Cert Africa</title>
-    <meta name="description" content>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.png">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+<?php
+$metatag = '<meta name="description" content="Get in touch with [Company Name] today! We offer a variety of ways to contact us, including phone, email, and social media. Our customer service team is here to help you with any questions or concerns you may have.">';
+$pageTitle = "Contact Us | React Cert Africa Beyond Certification"; // Set the title for this page
+include('head.php'); // Include the common head section
+?>
 
 <body>
     <?php
@@ -94,7 +80,7 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>info@reactcertafrica.com</h3>
+                                <h3>admin@reactcertafrica.com</h3>
                                 <p style="font-size: 15.5px;">Send us your query anytime!</p>
                             </div>
                         </div>
@@ -103,6 +89,13 @@
                             <div class="media-body">
                                 <h3>www.reactcertafrica.com</h3>
                                 <p style="font-size: 15.5px;">Enhanced User Experience</p>
+                            </div>
+                        </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="ti-timer"></i></span>
+                            <div class="media-body">
+                                <h3>Assured response within 48 hours.</h3>
+                                <p style="font-size: 15.5px;">Improved User Experience</p>
                             </div>
                         </div>
                     </div>

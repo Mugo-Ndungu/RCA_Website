@@ -14,11 +14,22 @@
                 <div class="properties pb-30">
                     <div class="properties__card">
                         <div class="properties__img">
-                            <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
+                            <a href="#"><img src="assets/img/gallery/Product Certification.png" alt></a>
                         </div>
                         <div class="properties__caption text-center">
-                            <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                    crucial to our histories</a></h3>
+                            <h3><a href="#">Independent 3rd Party Certification Services</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="properties pb-30">
+                    <div class="properties__card">
+                        <div class="properties__img">
+                            <a href="#"><img src="assets/img/gallery/Training.png" alt></a>
+                        </div>
+                        <div class="properties__caption text-center">
+                            <h3><a href="#">Training Services</a></h3>
                         </div>
                     </div>
                 </div>
@@ -30,21 +41,7 @@
                             <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
                         </div>
                         <div class="properties__caption text-center">
-                            <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                    crucial to our histories</a></h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="properties pb-30">
-                    <div class="properties__card">
-                        <div class="properties__img">
-                            <a href="#"><img src="assets/img/gallery/class-img1.jpg" alt></a>
-                        </div>
-                        <div class="properties__caption text-center">
-                            <h3><a href="#">Linguistics alumna says recognizing Indigenous Languages Day is
-                                    crucial to our histories</a></h3>
+                            <h3><a href="#">Social Certification Services</a></h3>
                         </div>
                     </div>
                 </div>
