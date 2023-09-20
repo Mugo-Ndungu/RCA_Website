@@ -65,14 +65,15 @@ include('head.php'); // Include the common head section
                         <li>Your organisation's details</li>
                         <li>Information about your allegation</li>
                     </ul>
-                    <form class="form-wrapper">
+                    <form id="uploadAllegationsForm" class="form-wrapper">
                         <fieldset class="section is-active">
                             <h3>Your Contact Details</h3>
-                            <select id="mySelect">
-                                <option value="option1 disabled">What situation would you like to report?</option>
-                                <option value="option2">I want to appeal abou React Cert Africa Ltd's decision about GLOBALG.A.P certification</option>
-                                <option value="option3">I think someone is not conforming to GLOBALG.A.P certification Standards</option>
-                                <option value="option3">I want to complain about the way React Cert Afica Ltd delivers it's services.</option>
+                            <select name="mysituationselect" id="mysituationselect">
+                                <option value="option1 disabled selected">What situation would you like to report?</option>
+                                <option value="I want to appeal about React Cert Africa Ltd's decision about GLOBALG.A.P certification">I want to appeal about React Cert Africa Ltd's decision about GLOBALG.A.P certification</option>
+                                <option value="I think someone is not conforming to GLOBALG.A.P certification Standards">I think someone is not conforming to GLOBALG.A.P certification Standards</option>
+                                <option value="I want to complain about the way React Cert Afica Ltd delivers it's services.">I want to complain about the way React Cert Afica Ltd delivers it's services.</option>
+                                <option value="Other">Other</option>
                             </select>
                             <input type="text" name="name" id="name" placeholder="Full Names">
                             <input type="text" name="email" id="email" placeholder="Email - Enter in the format: name@domain.com">
@@ -99,7 +100,7 @@ include('head.php'); // Include the common head section
                                 <br><br>
                                 <p>By clicking "Submit", you agree to our <a href="#" id="downloadButton" class="browse-btn">Confidentiality Policy.</a></p>
                             </div>
-                            <div class="button submitAllegations">Submit</div>
+                            <button type="submit" class="button submitAllegations getcertified">Submit</button>
                         </fieldset>
                     </form>
                 </div>
@@ -237,55 +238,6 @@ include('head.php'); // Include the common head section
     </div>
 
     <script>
-        document.querySelector('.submitAllegations').addEventListener('click', function() {
-            // Get values from the form
-            const situationType = document.querySelector('#mySelect').value;
-            const name = document.querySelector('#name').value;
-            const email = document.querySelector('#email').value;
-            const phone = document.querySelector('#phone').value;
-            const orgName = document.querySelector('#orgname').value;
-            const rcaId = document.querySelector('#rcaId').value;
-            const country = document.querySelector('#countrySelect').value;
-            const orgProduct = document.querySelector('#orgproduct').value;
-            const role = document.querySelector('#role').value;
-            const allegationText = document.querySelector('#allegation').value;
-
-            // Create an object to store the user values
-            const userList = [
-                situationType,
-                name,
-                email,
-                phone,
-                orgName,
-                rcaId,
-                country,
-                orgProduct,
-                role,
-                allegationText
-            ];
-
-            const userAllegationData = JSON.stringify(userList);
-
-            // Send the form data to actions.php using AJAX
-            $.ajax({
-                type: "POST",
-                url: "./assets/core/actions.php",
-                data: {
-                    userAllegationData: userAllegationData
-                },
-                success: function(response) {
-                    // Handle the response from the server (e.g., display a success message)
-                    Swal.fire(
-                        'Your allegation has been successfully submitted.',
-                        'Thank you for your report',
-                        'success'
-                    )
-                },
-                error: function(xhr, status, error) {
-                    console.log("AJAX Request Error: " + status + " - " + error);
-                }
-            });
-        });
         const countryList = [
             "Afghanistan",
             "Åland Islands",
@@ -560,7 +512,7 @@ include('head.php'); // Include the common head section
 
 
         $(document).ready(function() {
-            $('#mySelect').select2({
+            $('#mySituation').select2({
                 // Enable searching within options
                 search: true,
                 // Allow multiple selections
@@ -587,14 +539,45 @@ include('head.php'); // Include the common head section
                 currentSection.removeClass("is-active").next().addClass("is-active");
                 headerSection.removeClass("is-active").next().addClass("is-active");
 
-                $(".form-wrapper").submit(function(e) {
-                    e.preventDefault();
-                });
-
                 if (currentSectionIndex === 3) {
                     $(document).find(".form-wrapper .section").first().addClass("is-active");
                     $(document).find(".steps li").first().addClass("is-active");
                 }
+            });
+
+            $("#uploadAllegationsForm").submit(function(e) {
+                e.preventDefault();
+                console.log('Form Submitted');
+                var formData = new FormData(this);
+                console.log('Form Data:', formData);
+
+                $.ajax({
+                    type: "POST",
+                    url: "./assets/core/allegations.php",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        // console.log('Success:', response);
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Great',
+                            text: 'Uploaded Successfully.',
+                            footer: 'Contact Developer'
+                        })
+                        // $("#message").html(response);
+                    },
+                    error: function() {
+                        console.log(response);
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Error occurred while uploading.',
+                            footer: 'Contact Developer'
+                        })
+                        // $("#message").html("Error occurred while uploading.");
+                    }
+                });
             });
         });
 

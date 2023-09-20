@@ -21,11 +21,17 @@ include('head.php'); // Include the common head section
 
     /* you can use background imgae in internal css */
     .bg-img-1 {
-        background-image: url(./assets/img/gallery/Client\ request\ service.png);
+        background-image: url(./assets/img/gallery/Unconditional\ Certification\ Process.png);
     }
 
     .bg-img-2 {
-        background-image: url(./assets/img/gallery/Client\ request\ service.png);
+        background-image: url(./assets/img/gallery/Conditional\ Certification\ Process.png);
+    }
+    .bg-img-3 {
+        background-image: url(./assets/img/gallery/Certification\ NOT\ Recommended.png);
+    }
+    .bg-img-4 {
+        background-image: url(./assets/img/gallery/All\ In\ One\ Certification\ Process.png);
     }
     /*slider-style*/
     .active-slider {
@@ -73,13 +79,13 @@ include('head.php'); // Include the common head section
 
     a.home-btn:hover,
     .owl-nav div:hover {
-        background-color: #000;
+        background-color: #560f11;
     }
 
     /*owl-nav*/
     .owl-nav div {
-        border: 2px solid #fff;
-        color: #fff;
+        border: 2px solid #5fbb46;
+        color: #5fbb46;
         height: 40px;
         width: 40px;
         position: absolute;
@@ -210,6 +216,16 @@ include('head.php'); // Include the common head section
                                         <h1>Conditional Certification</h1>
                                     </div> -->
                                 </div>
+                                <div class="slider-items bg-img-3">
+                                    <!-- <div class="sigle-item">
+                                        <h1>Conditional Certification</h1>
+                                    </div> -->
+                                </div>
+                                <div class="slider-items bg-img-4">
+                                    <!-- <div class="sigle-item">
+                                        <h1>Conditional Certification</h1>
+                                    </div> -->
+                                </div>
                             </div>
                         </div>
                         <!-- slider-area-ends -->
@@ -310,7 +326,7 @@ include('head.php'); // Include the common head section
                 $('.active-slider').owlCarousel({
                     items: 1,
                     loop: true,
-                    nav: false,
+                    nav: true,
                     //animation
                     animateOut: 'fadeOut',
                     autoplay: true,

@@ -84,7 +84,7 @@ include('head.php'); // Include the common head section
         <div class="container">
             <div class="row mb-5 justify-content-center">
                 <div class="col-md-7 text-center">
-                    <h2 class="section-title mb-2">34 Job Listed</h2>
+                    <h2 class="section-title mb-2">6 Job Listed</h2>
                 </div>
             </div>
             <div class="mb-5">
@@ -197,9 +197,9 @@ include('head.php'); // Include the common head section
                         <a href="#" class="prev">Previous</a>
                         <div class="d-inline-block">
                             <a href="#" class="active">1</a>
-                            <a href="#">2</a>
+                            <!-- <a href="#">2</a>
                             <a href="#">3</a>
-                            <a href="#">4</a>
+                            <a href="#">4</a> -->
                         </div>
                         <a href="#" class="next">Next</a>
                     </div>
@@ -266,55 +266,43 @@ include('head.php'); // Include the common head section
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 </div> <!-- /.modal-header -->
                 <div class="modal-body">
-                    <form role="form">
+                    <form id="uploadResumeForm" enctype="multipart/form-data">
                         <!-- input with required star -->
                         <div class="form-group">
-
-                            <label for="name" class="control-label" id="nameL"><span class="fa fa-user form-control-feedback" aria-hidden="true"></span> Full Name <span class="required-field">*</span></label>
+                            <label for="fullname" class="control-label" id="nameL"><span class="fa fa-user form-control-feedback" aria-hidden="true"></span> Full Name <span class="required-field">*</span></label>
                             <div class="has-feedback">
-
-                                <input type="text" class="form-control" id="name" name="name" />
+                                <input type="text" class="form-control" id="fullname" name="fullname" required />
                             </div>
                         </div>
 
                         <!-- input with required star -->
                         <div class="form-group">
-
-                            <label for="phonno" class="control-label" id="phoneNoL"><span class="fa fa-phone form-control-feedback" aria-hidden="true"></span> Phone No.: <span class="required-field">*</span></label>
+                            <label for="phoneNo" class="control-label" id="phoneNoL"><span class="fa fa-phone form-control-feedback" aria-hidden="true"></span> Phone No.: <span class="required-field">*</span></label>
                             <div class="has-feedback">
 
-                                <input type="text" class="form-control" id="phonno" name="phonno" />
+                                <input type="text" class="form-control" id="phoneNo" name="phoneNo" required />
                             </div>
                         </div>
 
-
                         <!-- input with required star -->
                         <div class="form-group">
-
                             <label for="emailAddress" class="control-label" id="emailAddressL"><span class="fa fa-envelope form-control-feedback" aria-hidden="true"></span> Email Address <span class="required-field">*</span></label>
                             <div class="has-feedback">
-                                <input type="email" class="form-control" id="emailAddress" name="emailAddress" />
+                                <input type="email" class="form-control" id="emailAddress" name="emailAddress" required />
                             </div>
                         </div>
                         <div class="form-group">
-
-                            <label for="document" class="control-label" id="documentL"><span class="fa fa-file form-control-feedback" aria-hidden="true"></span> Attach Resume <span class="required-field">*</span></label>
+                            <label for="resumeFile" class="control-label" id="documentL"><span class="fa fa-file form-control-feedback" aria-hidden="true"></span> Attach Resume <span class="required-field">*</span></label>
                             <div class="has-feedback">
-                                <input type="file" name="document" id="document" accept="application/pdf">
+                                <input type="file" id="resumeFile" name="resumeFile" accept=".pdf" required />
                             </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" value="Upload Resume" class="btn btn-primary">
                         </div>
                     </form>
                 </div> <!-- /.modal-body -->
 
-                <div class="modal-footer">
-                    <button class="form-control btn btn-primary" onclick="getUserResume()">Ok</button>
-<!-- 
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
-                            <span class="sr-only">progress</span>
-                        </div>
-                    </div> -->
-                </div> <!-- /.modal-footer -->
 
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -343,49 +331,75 @@ include('head.php'); // Include the common head section
             }
         };
 
-        function getUserResume() {
-            // Get form elements by their IDs
-            var fullName = document.getElementById("name").value;
-            var phoneNo = document.getElementById("phonno").value;
-            var emailAddress = document.getElementById("emailAddress").value;
-            var resumeFile = document.getElementById("document").value;
-            var resumeList = [fullName, phoneNo, emailAddress, resumeFile]
+        $(document).ready(function() {
+            $("#uploadResumeForm").submit(function(e) {
+                e.preventDefault();
+                console.log('Form Submitted');
+                var formData = new FormData(this);
+                console.log('Form Data:', formData);
 
-            var resumeData = JSON.stringify(resumeList)
-
-            // Display user inputs (you can do anything you want with these values)
-            console.log("Full Name: " + fullName);
-            console.log("Phone No.: " + phoneNo);
-            console.log("Email Address: " + emailAddress);
-            console.log("Resume File: " + resumeFile);
-
-            // Send the form data to actions.php using AJAX
-            $.ajax({
-                type: "POST",
-                url: "./assets/core/actions.php",
-                data: {
-                    resumeData: resumeData
-                },
-                success: function(response) {
-                    // Handle the response from the server (e.g., display a success message)
-                    Swal.fire(
-                        'Successfully Uploaded Resume',
-                        'Resume Uploaded to Our Database',
-                        'success'
-                    )
-                },
-                error: function(xhr, status, error) {
-                    console.log("AJAX Request Error: " + status + " - " + error);
-                }
+                $.ajax({
+                    type: "POST",
+                    url: "./assets/core/actions.php",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        console.log('Success:', response);
+                        // $("#message").html(response);
+                    },
+                    error: function() {
+                        console.log('Error occurred while uploading.');
+                        // $("#message").html("Error occurred while uploading.");
+                    }
+                });
             });
-        }
+        });
+
+        // function getUserResume() {
+        //     // Get form elements by their IDs
+        //     var fullName = document.getElementById("name").value;
+        //     var phoneNo = document.getElementById("phonno").value;
+        //     var emailAddress = document.getElementById("emailAddress").value;
+        //     var resumeFile = document.getElementById("document").value;
+        //     var resumeList = [fullName, phoneNo, emailAddress, resumeFile]
+
+        //     var resumeData = JSON.stringify(resumeList)
+
+        //     // Display user inputs (you can do anything you want with these values)
+        //     console.log("Full Name: " + fullName);
+        //     console.log("Phone No.: " + phoneNo);
+        //     console.log("Email Address: " + emailAddress);
+        //     console.log("Resume File: " + resumeFile);
+
+        //     // Send the form data to actions.php using AJAX
+        //     $.ajax({
+        //         type: "POST",
+        //         url: "./assets/core/actions.php",
+        //         data: {
+        //             resumeData: resumeData
+        //         },
+        //         success: function(response) {
+        //             // Handle the response from the server (e.g., display a success message)
+        //             Swal.fire(
+        //                 'Successfully Uploaded Resume',
+        //                 'Resume Uploaded to Our Database',
+        //                 'success'
+        //             )
+        //             console.log(response)
+        //         },
+        //         error: function(xhr, status, error) {
+        //             console.log("AJAX Request Error: " + status + " - " + error);
+        //         }
+        //     });
+        // }
 
         // Attach an event listener to the form for submission
-        var form = document.querySelector("form");
-        form.addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-            getUserInputs(); // Call the function to get user inputs
-        });
+        // var form = document.querySelector("form");
+        // form.addEventListener("submit", function(event) {
+        //     event.preventDefault(); // Prevent the form from submitting normally
+        //     getUserInputs(); // Call the function to get user inputs
+        // });
     </script>
 
     <?php

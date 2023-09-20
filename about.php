@@ -71,7 +71,41 @@ include('head.php'); // Include the common head section
                             <div class="thumb">
                                 <img class="img-fluid" src="assets/img/gallery/woman user image.png" alt="Thumb">
                                 <div class="overlay">
-                                    <h4>Admin</h4>
+                                    <h4>Joyce Gema</h4>
+                                    <p>
+                                        Dedicated admin streamlining operations, organizing chaos, and keeping the team
+                                        on track. Efficiency is my mantra.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Joyce Gema</h4>
+                                <span>Managing Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" src="assets/img/gallery/woman user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Lisa Marie</h4>
                                     <p>
                                         Dedicated admin streamlining operations, organizing chaos, and keeping the team
                                         on track. Efficiency is my mantra.
@@ -134,40 +168,6 @@ include('head.php'); // Include the common head section
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
-                                <div class="overlay">
-                                    <h4>Alex Mugo</h4>
-                                    <p>
-                                        Tech enthusiast & problem solver. Bridging the digital divide as IT Support &
-                                        FullStack Developer. Crafting solutions, one line of code at a time.
-                                    </p>
-                                    <div class="social">
-                                        <ul>
-                                            <li class="twitter">
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                            </li>
-                                            <li class="pinterest">
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            </li>
-                                            <li class="instagram">
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <span class="message">
-                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
-                                </span>
-                                <h4>Alex Mugo</h4>
-                                <span>IT Support & FullStack Developer</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="row team-items">
                     <div class="col-md-4 single-item">
@@ -207,11 +207,12 @@ include('head.php'); // Include the common head section
                     <div class="col-md-4 single-item">
                         <div class="item">
                             <div class="thumb">
-                                <img class="img-fluid" width="315px" height="110px" src="assets/img/gallery/man user image.png" alt="Thumb">
+                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
                                 <div class="overlay">
-                                    <h4>Boniface Eepa</h4>
+                                    <h4>Alex Mugo</h4>
                                     <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                        Tech enthusiast & problem solver. Bridging the digital divide as IT Support &
+                                        FullStack Developer. Crafting solutions, one line of code at a time.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -232,8 +233,8 @@ include('head.php'); // Include the common head section
                                 <span class="message">
                                     <a href="#"><i class="fa fa-envelope-open"></i></a>
                                 </span>
-                                <h4>Boniface Eepa</h4>
-                                <span>Auditor</span>
+                                <h4>Alex Mugo</h4>
+                                <span>IT Support & FullStack Developer</span>
                             </div>
                         </div>
                     </div>
@@ -244,7 +245,7 @@ include('head.php'); // Include the common head section
                                 <div class="overlay">
                                     <h4>Caleb Kiptoo</h4>
                                     <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                        Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -277,7 +278,7 @@ include('head.php'); // Include the common head section
                                 <div class="overlay">
                                     <h4>Diana Moraa</h4>
                                     <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                        Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -310,7 +311,7 @@ include('head.php'); // Include the common head section
                                 <div class="overlay">
                                     <h4>Ian Duncan Orenge</h4>
                                     <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                        Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -343,7 +344,7 @@ include('head.php'); // Include the common head section
                                 <div class="overlay">
                                     <h4>Joy Ounda</h4>
                                     <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                        Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -376,7 +377,7 @@ include('head.php'); // Include the common head section
                                 <div class="overlay">
                                     <h4>Ruth Muthoni</h4>
                                     <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                        Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -407,42 +408,9 @@ include('head.php'); // Include the common head section
                             <div class="thumb">
                                 <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
                                 <div class="overlay">
-                                    <h4>Reul Wanjohi Munyu</h4>
-                                    <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
-                                    </p>
-                                    <div class="social">
-                                        <ul>
-                                            <li class="twitter">
-                                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                            </li>
-                                            <li class="pinterest">
-                                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            </li>
-                                            <li class="instagram">
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <span class="message">
-                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
-                                </span>
-                                <h4>Reul Wanjohi Munyu</h4>
-                                <span>Auditor</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <img class="img-fluid" src="assets/img/gallery/man user image.png" alt="Thumb">
-                                <div class="overlay">
                                     <h4>Wilson Mungoo</h4>
                                     <p>
-                                    Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                        Experienced auditor with 15+ years ensuring financial integrity and compliance.
                                     </p>
                                     <div class="social">
                                         <ul>
@@ -464,6 +432,39 @@ include('head.php'); // Include the common head section
                                     <a href="#"><i class="fa fa-envelope-open"></i></a>
                                 </span>
                                 <h4>Wilson Mungoo</h4>
+                                <span>Auditor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <div class="thumb">
+                                <img class="img-fluid" width="315px" height="110px" src="assets/img/gallery/man user image.png" alt="Thumb">
+                                <div class="overlay">
+                                    <h4>Boniface Eepa</h4>
+                                    <p>
+                                        Experienced auditor with 15+ years ensuring financial integrity and compliance.
+                                    </p>
+                                    <div class="social">
+                                        <ul>
+                                            <li class="twitter">
+                                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li class="pinterest">
+                                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li class="instagram">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa fa-envelope-open"></i></a>
+                                </span>
+                                <h4>Boniface Eepa</h4>
                                 <span>Auditor</span>
                             </div>
                         </div>

@@ -98,6 +98,15 @@ include('head.php'); // Include the common head section
                                 <p style="font-size: 15.5px;">Improved User Experience</p>
                             </div>
                         </div>
+                        <div class="media contact-info">
+                            <span class="contact-info__icon"><i class="fa fa-whatsapp" style="color: #25d366;"></i></span>
+                            <div class="media-body text-center">
+                                <h3>Scan Me</h3>
+                                <div class="blog-img">
+                                    <img height="150" width="150" src="assets/img/gallery/RCA WhatsApp.png" alt>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
